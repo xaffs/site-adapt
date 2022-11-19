@@ -1,0 +1,184 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import "adaptive.less";
+
+@primary : black;
+@secondary : white;
+
+.header {
+    padding-top: 1em;
+    &__nav-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button {
+        margin-left:5em;
+    }
+    &__main-logo img{
+        max-height: 3em;
+    }
+    &__main-logo {
+        padding-left:2em ;
+    }
+    &__nav-btns {
+        display: flex;  
+        place-items: center;   
+    }
+    &__burger-menu {
+        display: none;
+        position: absolute;
+        right:0px;
+        margin-top: 3.5em;
+        background-color: @secondary;
+    }
+    &__item {
+        border: 1px solid rgb(153, 151, 151);
+        padding: 1em 3em;
+        font-size: 1.3em;
+    }
+    &__burger-logo {
+      display:none;
+      padding-top: 0.8em;
+      padding-right: 4em;
+    }
+    &__buy-btn {
+        padding-right: 2em;
+    }
+    &__buy-btn img {
+        max-height: 2.5em;
+    }
+    &__line-1{
+        display: block;
+        height:0.2em;
+        width: 2em;
+        background-color:black;
+        margin-bottom: 0.5em;
+    }
+    &__line-2{
+        margin-bottom: 0.5em;
+        display: block;
+        height:0.2em;
+        width: 2em;
+        background-color:black;
+    }
+    &__line-3{
+        display: block;
+        height:0.15em;
+        width: 2em;
+        background-color:black;
+    }
+
+
+}
+.active {
+    display: block;
+  }
+
+.main {
+    padding-top: 1em;
+    &__wrapper {
+        background-color: lavender;
+    }
+    &__site-info {
+        display: grid;
+        place-items: center;
+    }
+    &__site-name {
+        font-size: 3em;
+    }
+    &__staff {
+        padding-top: 3em;
+    }
+    &__creo h5 {
+        display: flex;
+        justify-content: center;
+        padding: 0em 0em 3em;
+        font-size: 1.4em;
+    }
+    &__sites {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5em;
+    }
+    &__media {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5em;
+    }
+    &__media h5 {
+        display: flex;
+        justify-content: center;
+        padding: 5em 0em 3em;
+        font-size: 1.4em;
+    }
+    &__sites h5{
+        display: flex;
+        justify-content: center;
+        padding: 5em 0em 3em;
+        font-size: 1.4em;
+    }
+    &__creo-staff {
+        display: grid;
+        place-content: center;
+        gap: 3em 3em;
+        grid-template-columns: repeat(auto-fit, 8em);
+    }
+    &__item {
+        padding: 1.5em;
+        border-radius: 10%;
+        background-color: @secondary;
+        display: flex;
+        flex-direction: column;
+    }
+    &__sites-staff {
+        display: grid;
+        place-content: center;
+        gap: 3em 3em;
+        grid-template-columns: repeat(auto-fit, 8em);
+    }
+    &__media-staff {
+        display: grid;
+        place-content: center;
+        gap: 3em 3em;
+        grid-template-columns: repeat(auto-fit, 8em);
+    }
+    &__reviews {
+        display: flex;
+        justify-content: center;
+        padding-top: 10em;
+        padding-bottom: 5em;
+    }
+    &__rev-name img {
+        width: 3em;
+    }
+    &__block-rev {
+        background-color: white;
+        border-radius: 15px;
+        padding: 3em 6em 3em 2em;
+    }
+}
+.footer {
+    background-color: rgb(184, 177, 177);
+    &__ft-wrap {
+        padding: 3em 0em;
+        display: flex;
+        justify-content: center;
+    }
+    &__ft-wrap h5 {
+        font-size: 1em;
+    }
+    &__ft-cnt h4, div{
+        padding-left: 2em;
+    }
+    &__ft-cnt {
+        font-size: 0.9em;
+    }
+    &__ft-cnt a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}   
